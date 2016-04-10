@@ -3,7 +3,7 @@
 import sys
 
 props = {}
-for line in open('android/properties/private-%s.properties' % sys.argv[-1]):
+for line in open('android/properties/private-{0!s}.properties'.format(sys.argv[-1])):
     if len(line.strip()) == 0:
         continue
     if line[0] == '#':
